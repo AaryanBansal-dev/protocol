@@ -478,7 +478,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 ### 10.1 Development Setup
 
 ```bash
-git clone https://github.com/rootlessnet/rootlessnet
+git clone https://github.com/rootlessnet/protocol
 cd rootlessnet
 bun install
 bun run dev

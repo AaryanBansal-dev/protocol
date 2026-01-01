@@ -201,7 +201,7 @@ We welcome contributions! See [CONTRIBUTING.md](./docs/CONTRIBUTING.md) for guid
 
 ```bash
 # Clone the repository
-git clone https://github.com/rootlessnet/rootlessnet
+git clone https://github.com/rootlessnet/protocol
 
 # Install dependencies
 bun install
