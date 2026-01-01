@@ -1,7 +1,7 @@
 {
-  "name": "@rootlessnet/crypto",
+  "name": "@rootlessnet/messaging",
   "version": "2.0.0",
-  "description": "Cryptographic primitives for RootlessNet protocol",
+  "description": "End-to-end encrypted messaging for RootlessNet protocol",
   "type": "module",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -17,20 +17,13 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@noble/ciphers": "^1.0.0",
-    "@noble/curves": "^1.6.0",
-    "@noble/hashes": "^1.5.0",
-    "multiformats": "^13.3.0"
+    "@rootlessnet/crypto": "workspace:*",
+    "@rootlessnet/identity": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.6.0",
     "@types/bun": "^1.1.0"
   },
   "files": ["dist", "src"],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/RootlessNet/protocol.git",
-    "directory": "packages/crypto"
-  },
   "license": "MIT"
 }

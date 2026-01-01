@@ -1,7 +1,7 @@
 {
-  "name": "@rootlessnet/crypto",
+  "name": "@rootlessnet/sdk",
   "version": "2.0.0",
-  "description": "Cryptographic primitives for RootlessNet protocol",
+  "description": "RootlessNet SDK - Complete SDK for building on RootlessNet protocol",
   "type": "module",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -14,23 +14,19 @@
   "scripts": {
     "build": "bun build ./src/index.ts --outdir ./dist --target node",
     "test": "bun test",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "@noble/ciphers": "^1.0.0",
-    "@noble/curves": "^1.6.0",
-    "@noble/hashes": "^1.5.0",
-    "multiformats": "^13.3.0"
+    "@rootlessnet/crypto": "workspace:*",
+    "@rootlessnet/identity": "workspace:*",
+    "@rootlessnet/content": "workspace:*",
+    "@rootlessnet/messaging": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.6.0",
     "@types/bun": "^1.1.0"
   },
   "files": ["dist", "src"],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/RootlessNet/protocol.git",
-    "directory": "packages/crypto"
-  },
   "license": "MIT"
 }
